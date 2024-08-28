@@ -1,0 +1,24 @@
+﻿<Window x:Class="Lab2.ReporteSalidas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2"
+        mc:Ignorable="d"
+        Title="ReporteSalidas" Height="450" Width="800">
+    <Grid>
+        <ListView Name="DatosSalidasListView" Margin="5">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Fecha" Width="100" DisplayMemberBinding="{Binding Fecha}"/>
+                    <GridViewColumn Header="Peso" Width="100" DisplayMemberBinding="{Binding Peso}"/>
+                    <GridViewColumn Header="Tipo de Auto" Width="150" DisplayMemberBinding="{Binding TipoAuto}"/>
+                    <GridViewColumn Header="Nombre del Transportista" Width="200" DisplayMemberBinding="{Binding NombreTransportista}"/>
+                    <GridViewColumn Header="Peso de Ingreso" Width="100" DisplayMemberBinding="{Binding PesoIngreso}"/>
+                    <GridViewColumn Header="Peso de Salida" Width="100" DisplayMemberBinding="{Binding PesoSalida}"/>
+                    <GridViewColumn Header="Fecha y Hora" Width="150" DisplayMemberBinding="{Binding FechaYHora}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

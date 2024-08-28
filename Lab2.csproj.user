@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="ListaCamion.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ListaConductor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RegistroCamiones.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RegistroConductores.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RegistroSalidas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReporteSalidas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="ListaCamion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListaConductor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RegistroCamiones.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RegistroConductores.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RegistroSalidas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReporteSalidas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

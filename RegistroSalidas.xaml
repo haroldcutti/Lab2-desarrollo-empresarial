@@ -1,0 +1,56 @@
+﻿<Window x:Class="Lab2.RegistroSalidas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2"
+        mc:Ignorable="d"
+        Title="RegistroSalidas" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Campos -->
+        <TextBlock Text="Tipo de Documento:" Grid.Row="0" Grid.Column="0" Margin="5"/>
+        <ComboBox Name="TipoDocumentoComboBox" Grid.Row="0" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Text="Número de Documento:" Grid.Row="1" Grid.Column="0" Margin="5"/>
+        <TextBox Name="NumeroDocumentoTextBox" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Text="Peso:" Grid.Row="2" Grid.Column="0" Margin="5"/>
+        <TextBox Name="PesoTextBox" Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Text="Tipo de Auto:" Grid.Row="3" Grid.Column="0" Margin="5"/>
+        <TextBox Name="TipoAutoTextBox" Grid.Row="3" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Text="Nombre del Transportista:" Grid.Row="4" Grid.Column="0" Margin="5"/>
+        <TextBox Name="NombreTransportistaTextBox" Grid.Row="4" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Text="Fecha y Hora:" Grid.Row="5" Grid.Column="0" Margin="5"/>
+        <DatePicker Name="FechaPicker" Grid.Row="5" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Text="Peso de Ingreso:" Grid.Row="6" Grid.Column="0" Margin="5"/>
+        <TextBox Name="PesoIngresoTextBox" Grid.Row="6" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Text="Peso de Salida:" Grid.Row="7" Grid.Column="0" Margin="5"/>
+        <TextBox Name="PesoSalidaTextBox" Grid.Row="7" Grid.Column="1" Margin="5"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="30">
+            <Button Content="Guardar" Width="75" Margin="5"/>
+            <Button Content="Cancelar" Width="75" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
